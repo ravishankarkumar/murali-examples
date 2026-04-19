@@ -78,7 +78,7 @@ fn main() -> anyhow::Result<()> {
     let mut scene = Scene::new();
 
     let title_id = scene.add_tattva(
-        Label::new("Agentic Flow With Neural Node", 0.34)
+        Label::new("Agentic Flow With Neural Node", 0.7)
             .with_color(WHITE),
         Vec3::ZERO,
     );
@@ -139,14 +139,14 @@ fn main() -> anyhow::Result<()> {
 
     let task_done_id = scene.add_tattva(
         Label::new("Task completed", 0.26).with_color(WHITE),
-        Vec3::new(6.2, 0.18, 0.0),
+        Vec3::new(6.2, -1.3, 0.0),
     );
     scene.hide(task_done_id);
 
     scene.add_tattva(
         Label::new(
             "The flow pauses at the embedded neural-network node until three inference loops complete.",
-            0.20,
+            0.3,
         )
         .with_color(GRAY_B),
         Vec3::new(0.0, -3.2, 0.0),
@@ -201,6 +201,9 @@ fn main() -> anyhow::Result<()> {
 
     scene.set_timeline("main", timeline);
     scene.camera_mut().position = Vec3::new(0.0, 0.0, 11.5);
+
+    let current_width = scene.camera_mut().view_width();
+    scene.camera_mut().set_view_width(current_width * 1.3);
 
     App::new()?.with_scene(scene).run_app()
 }

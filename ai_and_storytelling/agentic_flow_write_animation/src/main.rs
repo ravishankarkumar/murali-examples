@@ -19,11 +19,11 @@ fn main() -> anyhow::Result<()> {
     let mut scene = Scene::new();
 
     let title_id = scene.add_tattva(
-        Label::new("Agentic Loop: Write Animation + Progressive Edges", 0.34)
+        Label::new("Agentic Loop: Write Animation + Progressive Edges", 0.4)
             .with_color(WHITE),
         Vec3::ZERO,
     );
-    scene.to_edge(title_id, Direction::Up, 0.35);
+    scene.to_edge(title_id, Direction::Up, 0.9);
 
     let nodes = vec![
         FlowNode::new("Observe")
@@ -116,7 +116,7 @@ fn main() -> anyhow::Result<()> {
     scene.add_tattva(
         Label::new(
             "Nodes draw with write effect, text types character by character",
-            0.22,
+            0.3,
         )
         .with_color(GRAY_B),
         Vec3::new(0.0, -3.1, 0.0),
