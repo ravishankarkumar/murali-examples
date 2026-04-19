@@ -23,3 +23,5 @@ target
 **/target
 **/render_output
 render_output/
+
+**/.DS_Store
