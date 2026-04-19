@@ -1,0 +1,15 @@
+[package]
+name = "projectile_with_updaters"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+murali = "0.1.4"
+glam = { version = "0.27", features = ["bytemuck"] }
+anyhow = "1"
+tokio = { version = "1", features = [
+  "rt",
+  "macros",
+  "full",
+] }
+
