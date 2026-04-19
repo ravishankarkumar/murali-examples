@@ -1,6 +1,6 @@
 # Murali Examples
 
-A collection of 74+ independent Rust examples demonstrating the [Murali](https://crates.io/crates/murali) animation library. Each example is a self-contained crate with its own dependencies.
+A collection of independent Rust examples demonstrating the [Murali](https://crates.io/crates/murali) animation library. Each example is a self-contained crate with its own dependencies.
 
 ## Structure
 
@@ -48,4 +48,4 @@ cargo run
 
 ## License
 
-MIT - See LICENSE file
+APACHE 2.0 - See LICENSE file
